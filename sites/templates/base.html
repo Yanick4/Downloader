@@ -9,6 +9,113 @@
     <script src="{%static 'js/script.js'%}"></script>
 </head>
 <body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background: rgb(241 245 249);
+        }
+        .container {
+            width: 70%;
+            height: auto;
+            position: relative;
+            margin: auto;
+        }
+        .container h1{
+            text-align: center;
+            color: #0b66c0;
+            text-transform: uppercase;
+            font-weight: lighter;
+            margin-top: 50px;
+        }
+        .download-container{
+            width: calc(100% - 24px);
+            height: auto;
+            margin-top: 22px;
+            padding: 12px;
+            background: #fff;
+            box-shadow: 0 0 3px #bbd8ef;
+            border-radius: 3px;
+            display: flex;
+            gap: 12px;
+        }
+        .download-sub{
+            flex: 5;
+        }
+        .download-sub iframe{
+            width: 100%;
+            height: 250px;
+            border-radius: 3px;
+            margin-bottom: 23px;
+            background-color: #222;
+        }
+        .input{
+            width: 100%;
+            border: 3px solid #0b66c0;
+            border-radius: 3px;
+            height: 45px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .input input{
+            flex: 7.5;
+            border: none;
+            height: 100%;
+            outline: none;
+            background: rgb(241 245 249);
+            text-indent: 32px;
+        }
+        .input button{
+            flex: 2.5;
+            border: none;
+            background-color: #0b66c0;
+            color: #fff;
+            height: 100%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .folder{
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            height: 45px;
+            overflow: hidden;
+            margin-bottom: 23px;
+        }
+        .folder input{
+            border: none;
+            height: 100%;
+            outline: none;
+            background: rgb(241 245 249);
+            text-indent: 32px;
+            width: 100%;
+        }
+        .title{
+            width: 90%;
+            margin: auto;
+            height: auto;
+            position: relative;
+            text-align: justify;
+            font-size: 22px;
+            font-weight: 450px;
+        }
+
+</style>
+
+
+
+
+
+
+
+
     {%block content%}
     {%endblock%}
 </body>

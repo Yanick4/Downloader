@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("download-api",download_video),
     path("video-meta-data",get_video_title),
-    path("download-site",include("sites.urls"))
+    path("",include("sites.urls"))
 ]
