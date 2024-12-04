@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block content%}
+    <div class="container">
+        <h1>Downloader</h1>
+        <div class="download-container">
+            <div class="download-sub">
+                <iframe frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="title"></p>
+            </div>
+            <div class="download-sub">
+                <form action="" method="post">
+                    {%csrf_token%}
+                    <div class="folder">
+                        <input name="folder" type="text" placeholder="Donner un nom a cette collection de video..">
+                    </div>
+                    <div class="input">
+                        <input name="url" type="text" placeholder="Inscrivez le lien de votre video ou playliste ici...">
+                        <button class="submit">Telecharger</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="width: 100%; margin: auto; margin-top: 23px; text-align: center;">With Downloader, download video from any platform</div>
+    </div>
+{%endblock%}
