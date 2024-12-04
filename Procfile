@@ -1,1 +1,1 @@
-web: gunicorn downloader.wsgi:application
+web: gunicorn download.wsgi:application
